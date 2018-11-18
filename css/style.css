@@ -1,0 +1,168 @@
+@import "./parallax.css";
+
+/* TAGS */
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+}
+html, body {
+    height: 100%;
+}
+
+/* CLASSES */
+.wrapper {
+    height: 100%;
+    justify-content: center;
+}
+.color-white {
+    color: #ffffff;
+}
+/* Lines */
+.underline_orange {
+    position: relative;
+}
+.underline_orange::after {
+    position: absolute;
+    left: 50%;
+    bottom: -60px;
+    transform: translateX(-50%);
+    content: "";
+    background-color: #f1ad1d;
+    width: 60px;
+    height: 3px;
+}
+.underline_white {
+    position: relative;
+}
+.underline_white::after {
+    position: absolute;
+    left: 50%;
+    bottom: -45px;
+    transform: translateX(-50%);
+    content: "";
+    background-color: #ffffff;
+    width: 280px;
+    height: 3px;
+}
+
+/* HEADER */
+.header {
+    height: 100vh;
+}
+.header .parallax__layer--base {
+    display: grid;
+    align-content: flex-end;
+    padding: 0 0 145px 82px;
+    color: #ffffff;
+}
+.header .parallax__layer--base > h1 {
+    font-size: 4.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.header .parallax__layer--base > p {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.8rem;
+    text-transform: capitalize;
+}
+.logo {
+    width: 830px;
+    margin-top: 25px;
+    border: 1px solid #ffffff;
+    background: rgba(0, 0, 0, 0.3);
+    font-size: 5.4rem;
+    font-weight: 700;
+    line-height: 2.4;
+    text-transform: uppercase;
+}
+.logo span {
+    display: inline-block;
+    height: 100%;
+    width: 152px;
+    background-color: #ffffff;
+    color: #f1ad1d;
+    text-align: center;
+}
+.header .parallax__layer--back {
+    background: url(../images/bg/bg-header.jpg) no-repeat center;
+    background-size: cover;
+}
+
+/* SECTIONS */
+section {
+    height: 50vh;
+}
+section .parallax__layer--base {
+    display: grid;
+    grid-row-gap: 35px;
+    align-content: center;
+    text-align: center;
+}
+section h3 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #333333;
+    text-transform: uppercase;
+}
+section h3 > span {
+    color: #f1ad1d;
+}
+section h5 {
+    font-family: 'Lato', sans-serif;
+    color:  #4d4943;
+    font-size: 1.7rem;
+}
+
+.wts,
+.secret,
+.trust,
+.share {
+    z-index: 10;
+}
+.wts .parallax__layer--base,
+.secret .parallax__layer--base,
+.trust .parallax__layer--base,
+.share .parallax__layer--base {
+    background-color: #ffffff;
+}
+
+/* SECTION 'CHANGE' */
+.change .parallax__layer--back-a {
+    background: url(../images/bg/bg-speed.jpg) no-repeat center #000000;
+    background-size: cover;
+}
+
+/* SECTION 'FEATURE' */
+.feature .parallax__layer--base {
+    grid-template-columns: 75%;
+    grid-row-gap: 100px;
+    justify-content: center;
+}
+.logo_block {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.feature .parallax__layer--back-a {    
+    background: url(../images/bg/bg-forest.jpg) no-repeat center #000000;
+    background-size: cover;
+}
+
+/* SECTION 'THEMEFOREST' */
+.themeforest .parallax__layer--base {
+    grid-template-columns: 575px;
+    grid-row-gap: 100px;
+    justify-content: center;
+}
+.themeforest h5 {
+    font-family: 'Open Sans';
+    font-size: 1.8rem;
+    line-height: 1.67;
+}
+.themeforest a {
+    color: #f1ad1d;
+}
+.themeforest .parallax__layer--back-a { 
+    background: url(../images/bg/bg-bridge.jpg) no-repeat center #000000;
+    background-size: cover;
+}
